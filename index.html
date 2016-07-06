@@ -1,6 +1,6 @@
 ---
 layout: page
-description: "A Clean Blog Theme by Start Bootstrap"
+description: "Welcome to KIXLAB"
 ---
 
 {% for post in paginator.posts %}
@@ -8,6 +8,9 @@ description: "A Clean Blog Theme by Start Bootstrap"
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">            {{ post.title }}
         </h2>
+        {% if post.categories contains "math" %}
+            <p>haha</p>
+        {% endif %}
         {% if post.subtitle %}
         <h3 class="post-subtitle">
             {{ post.subtitle }}
